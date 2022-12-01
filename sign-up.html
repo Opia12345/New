@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Sign-up</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="assets/img/nav/earn.png" type="image/x-icon" />
+  
+  
+    <!-- MDB -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/mdb.min.css" rel="stylesheet">
+    <link href="assets/css/mdb.dark.min.css" rel="stylesheet">
+
+    
+    <style>
+      *{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    }
+        body{
+            background-color: black;
+            background-image: url("assets/img/back-2.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-x: right;
+            background-position-y: 4em;
+            background-size: 70em;
+        }
+        
+      .square{
+        text-align: center;
+      width: 35em;
+      height: 55em;
+      margin-top: 8em;
+      border-top-left-radius: 5em;
+      border-bottom-right-radius: 5em;
+      background: rgba(126, 126, 126, 0.199);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border: 1px solid white;
+    box-shadow: 0 8px 32px 0 rgba(5, 202, 252, 0.37);
+}
+h1{
+margin-top: 1em;
+color: white;
+text-align: center;
+}     
+.form-control{
+ color: white;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  border-bottom:1px solid white ;
+  box-shadow: none;
+  -webkit-box-shadow:none;
+  width: 18em;
+}
+.form-horizontal{
+margin-top:-10em;
+}
+.form-control::-webkit-input-placeholder{
+  color: white;
+}
+.btn{
+  width: 25em;
+  border-radius: 1.5em;
+}
+small{
+  color: white;
+}
+
+.popup{
+      width: 300px;
+      height: auto;
+      border-radius: 6px;
+      position: absolute;
+      transform: translate(-50%, -50%) scale(0.1);
+      text-align: center;
+      top: 0;
+      left: 50%;
+      padding:0 30px 30px;
+      border-radius: 10px;
+      background: rgba(126, 126, 126, 0.938);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      visibility: hidden;
+      transition: transform 0.4s top 0.4s;
+    }
+    .popup i{
+      width: 50px;
+      margin-top: -50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .popup button{
+      width: 20em;
+    }
+    i.fa-check{
+      animation: animate 3s linear infinite;
+      text-shadow: 0 0 50px #ffffff;
+      font-size: 3em;
+      background-color: rgb(0, 195, 255);
+      border-radius: 2em;
+    }
+    .open-popup{
+      visibility: visible;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(1);
+
+    }
+    </style>
+
+  </head>
+
+  
+  <body>
+    <!-- Start your project here-->
+ <!-- Navbar -->
+ 
+ <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+<!-- Navbar brand -->
+<img src="assets/img/nav/log0.png" style="width: 11em;">
+
+    <button
+    class="navbar-toggler"
+    type="button"
+    data-mdb-toggle="collapse"
+    data-mdb-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation">
+    <h2 class="fa fa-bars"></h2>
+    
+  </button>
+    
+    <!-- Toggle button -->
+   
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+
+     <!-- Left links -->
+     <ul class="navbar-nav" style="margin-left: 10em; font-size: 1.3em;">
+      <li class="active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="faq.html">FAQs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+    </ul>
+    <!-- Left links -->
+  </div>
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <!-- Left links -->
+
+      <div class="h-100 d-flex justify-content-end" >
+        <a class="btn btn-md btn-info me-3" style="width: auto;" type="button" href="sign-up.html">
+        Sign Up</a>
+       
+        <a class="btn btn-md btn-outline-light me-3" style="width: auto;"  type="button" href="login.html" style="margin-left: 1em;">
+          Login</a>
+       
+      </div>
+    </div>
+    </div>
+</div>
+</nav>
+<!-- Navbar -->
+    
+    
+    <div class="container h-100 d-flex justify-content-center align-items-center">
+        <div class="square">
+            <img src="assets/img/nav/log0.png" style="width: 15em; margin-top: 2em;">
+    <h1>Sign Up</h1>
+    
+    <div class="container h-100 d-flex justify-content-center align-items-center">
+         <form class="form-horizontal" id="form" name="myForm" role="form" action="#">
+          <div class="form-group" style="margin-top: 1em;">
+          <input type="text" class="form-control" id="first Name" placeholder="First Name" name="name">
+          </div>
+          <div class="form-group" style="margin-top: 1em;">
+          <input type="text" class="form-control" id="last Name" placeholder="Last Name" name="name1">
+          </div>
+            <div class="form-group" style="margin-top: 1em;">
+              <input type="email" class="form-control" id="Email" placeholder="Email" name="name2">
+              </div>
+              <div class="form-group"style="margin-top: 1em;">
+                <input type="password" class="form-control" id="Password" placeholder="Password" name="name3">
+                </div>
+                
+    
+          <div class="form-group" style="margin-top: 1em;">
+          <a type="submit" href="#" class="btn btn-info" onclick="openPopup()">Agree and Continue</a>
+          </div>
+          <small>By clicking agree and continue, <br>i agree to our <a href="#"> Privacy and Policy Terms.</a></small>
+          <div class="form-group" style="margin-top: 1em;">
+            <small>Sign Up With</small>
+            <p>
+              <a type="submit" href="#" class="btn btn-dark">
+                <i class="fa fa-google-plus"></i> Continue with Google</a>
+                </p>
+                <p>
+                <a type="submit" href="#" class="btn btn-dark">
+                  <i class="fa fa-facebook-square"></i> Continue with Facebook</a>
+            </p>
+            <p>
+              <a type="submit" href="#" class="btn btn-dark">
+                <i class="fa fa-apple"></i> Continue with Apple</a>
+          </p>
+         
+             <div id="message" style="color: black;"></div>
+            </p>
+           </div>
+          </form>
+        </div>
+        <div class="container h-100 justify-content-center align-items-center">
+          <div class="popup" id="popup">
+            <i class="fa fa-check"></i>
+            <p style="margin-top: 2em; color: white;"><h3>Congratulations!</h3><br>
+              Your details have been submitted successfully. Thank you!</p>
+          </div>
+        </div>
+      </div>
+
+      
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="assets/js/index.js"></script>
+  </body>
+</html>
